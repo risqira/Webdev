@@ -1,0 +1,209 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+
+/* Navbar */
+.navbar {
+  background-color: rgb(255, 255, 255);
+  max-width: 1350px;
+  position: relative;
+  margin: auto;
+  display: block;
+}
+.imagenavbar {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-top: 5%;
+  margin-bottom: 5px;
+  height: 78px;
+  width: 76px;
+}
+
+.nav-link {
+  color: rgb(56, 56, 56);
+  margin-left: 1rem;
+  margin-right: 5px;
+  font-size: 20px;
+  margin-top: 5px;
+  line-break: loose;
+  font-family: 'Hind', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  font-variant: inherit;
+}
+.nav-link:hover {
+  color: rgb(0, 235, 0);
+}
+.bi {
+  margin: 1rem;
+  cursor: pointer;
+}
+/* end navbar */
+
+/* body */
+body {
+  cursor: auto;
+  background-color: rgb(172, 172, 172);
+}
+
+/* search */
+.terbitkan {
+  display: inline-block;
+  width: 104px;
+  height: 33px;
+  border-radius: 17px;
+  background: #2f2f2f;
+  line-height: 32px;
+  text-align: center;
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 420px;
+  margin-top: 10px;
+  margin-right: 3px;
+}
+
+.terbitkan:hover {
+  background-color: #000000;
+  color: rgb(81, 255, 0);
+}
+.masuk {
+  display: inline-block;
+  width: 104px;
+  height: 33px;
+  margin-left: 4px;
+  border: 1px solid #b4b4b4;
+  border-radius: 17px;
+  background: #fff;
+  line-height: 32px;
+  text-align: center;
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: 500;
+  color: #838383;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 12px;
+  margin-top: 10px;
+}
+
+.masuk:hover {
+  background-color: rgb(216, 216, 216);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.bar {
+  display: inline-block;
+  font-size: 20px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #c5c5c5;
+  cursor: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.search-box {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  margin-left: 1100px;
+}
+
+.search-box.active {
+  width: 310px;
+  margin-left: 842px;
+}
+.search-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 50px;
+  background: rgb(206, 206, 206);
+  outline: #000000;
+  padding: 0 60px 0 20px;
+  font-size: 16px;
+  opacity: 0;
+  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.search-box input.active {
+  opacity: 1;
+}
+.search-box input::placeholder {
+  color: rgb(95, 95, 95);
+}
+.search-box .search-icon {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  line-height: 50px;
+}
+.search-box .search-icon:hover {
+  color: #ff0000;
+}
+.search-box .search-icon.active {
+  right: 0px;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  font-size: 20px;
+  background: #000000;
+  color: #00ff37;
+  transform: translateY(-50%) rotate(360deg);
+}
+
+.search-box .search-icon.active:hover {
+  color: #ff0000;
+}
+
+.search-box .cancel-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 0.75s 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.search-box .cancel-icon.active {
+  right: -30px;
+  transform: translateY(-50%) rotate(360deg);
+}
+.search-box .cancel-icon.active:hover {
+  color: #ff0000;
+}
+.search-box .search-data {
+  text-align: center;
+  padding-top: 7px;
+  color: #fff;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+.search-box .search-data.active {
+  display: none;
+}
